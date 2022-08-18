@@ -20,7 +20,9 @@ public class ConstructorRun {
 		                           //전달 인자, 인자(Argument)
 		 System.out.println("프로그램 종료");
 		 
-		
+		 Member member6=new Member("아무거나","안알랴줌","01099998888",11);
+		 Member member7=new Member("1아무거나","1안알랴줌","01099997777",13);
+		 
 		 
 	 }
 }
