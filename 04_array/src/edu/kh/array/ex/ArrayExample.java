@@ -437,8 +437,6 @@ public class ArrayExample {
 	}
 }
 	
-	//서술형 3문
-	//코딩 문제
-	//배열 14문
+	
 
 
