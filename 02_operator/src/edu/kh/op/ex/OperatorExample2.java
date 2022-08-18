@@ -54,4 +54,3 @@ public class OperatorExample2 {
 	//초과 미만 이상 이하   =는 항상 오른쪽이다
 	}
 }
-
