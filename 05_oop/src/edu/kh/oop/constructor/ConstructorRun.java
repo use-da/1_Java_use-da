@@ -1,6 +1,7 @@
 package edu.kh.oop.constructor;
 
 import edu.kh.oop.constructor.model.vo.Member;
+import edu.kh.oop.constructor.model.vo.Temp;
 public class ConstructorRun {
 
 	 public static void main(String[]args) {
@@ -17,12 +18,12 @@ public class ConstructorRun {
 		 //public Member(){} //Member클래스에 자동 추가
 		 
 		 Member member5=new Member("member22", "pass22@","01022223333",33);
+		 Member member6=new Member("아무거나","안알랴줌","01099998888",11);
+		 Member member7=new Member("1아무거나","1안알랴줌","01099997777",13);
 		                           //전달 인자, 인자(Argument)
 		 System.out.println("프로그램 종료");
 		 
-		 Member member6=new Member("아무거나","안알랴줌","01099998888",11);
-		 Member member7=new Member("1아무거나","1안알랴줌","01099997777",13);
-		 
+		 Temp t1=new Temp();
 		 
 	 }
 }
