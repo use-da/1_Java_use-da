@@ -1,7 +1,7 @@
 package edu.kh.inheritance.model.vo;
 
-public class Person {
-
+public class Person extends Object{  
+	//extends Object->상속 구문이 작성되지 않으면 컴파일러가 자동 추가
 	private String name;
 	private int age;
 	
@@ -36,5 +36,12 @@ public class Person {
 
 	public void setName(String name) {
 		this.name = name;
+	}
+	
+	public void introduce() {
+		System.out.println("이름 : "+name);
+		System.out.println("나이 : "+age);
+
+		
 	}
 }
