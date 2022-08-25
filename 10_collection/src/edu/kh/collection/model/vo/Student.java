@@ -60,5 +60,15 @@ public class Student {
 		this.score = score;
 	}
 	
+	//Object.toString() 오버라이딩
+	//alt + shift + s -> s -> Enter
+	
+	@Override
+	public String toString() {
+		return "Student [name=" + name + ", age=" + age + ", address=" + address + ", gender=" + gender + ", score="
+				+ score + "]";
+	}
+	
+	
 	
 }
