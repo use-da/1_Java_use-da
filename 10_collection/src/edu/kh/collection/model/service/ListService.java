@@ -13,7 +13,7 @@ public class ListService {
 	 * 	중복 값 저장 가능(인덱스 번호로 구분 가능하기 때문에)
 	 * 	
 	 *  List를 상속받아 구현한 클래스
-	 *  ->ArrayList, LinkedList,Vector
+	 *  ->ArrayList, LinkedList, Vector
 	 * 
 	 * */
 	
