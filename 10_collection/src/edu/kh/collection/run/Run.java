@@ -14,6 +14,8 @@ public class Run {
 //		new StudentView().displayMenu();
 		
 		SetService service2=new SetService();		
-		service2.ex1();
+		//service2.ex1();
+		//service2.ex2();
+		service2.ex3();
 	}
 }
