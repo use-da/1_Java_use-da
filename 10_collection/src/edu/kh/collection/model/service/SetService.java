@@ -156,4 +156,11 @@ public class SetService {
 		
 	}
 	
+	//Collection : 자바의 자료구조 모음
+		//<T> 제네릭 : 타입제한 기능
+		//향상된 for문 : for( 참조변수 : 배열 또는 컬렉션 )
+		//Iterator(반복자) : 무작위로 하나씩 꺼내 보여준다
+	//List : 순서 유지(인덱스 o), 중복 데이터o
+	//Set : 순서 x(인덱스 x), 중복 데이터x -> equals(), hashCode()오버라이딩 필요
+	
 }
