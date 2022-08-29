@@ -10,6 +10,9 @@ public class Run {
 //		t1.test0818ex2();
 //		t1.test0818ex3();
 		
+		Test2 t2=new Test2();
+		
+		t2.test0829ex1();
 		
 		
 		
