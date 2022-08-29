@@ -12,10 +12,11 @@ public class ArrayPractice {
 //	순서대로 배열의 각 인덱스 요소에 대입하고 출력한 후
 //	짝수 번째 인덱스 값의 합을 출력하세요. (0 번째 인덱스는 짝수로 취급)
 	public void practice1() {
-		int[]arr= {1,2,3,4,5,6,7,8,9};
+		int[]arr= new int[9];
 		
 		int sum=0;
-		for(int i=0;i<=8;i++) {
+		for(int i=0;i<arr.length;i++) {
+			arr[i]=i+1;
 			System.out.print(arr[i]+" ");
 			
 			if(arr[i]%2!=0) {
@@ -34,10 +35,11 @@ public class ArrayPractice {
 //	순서대로 배열의 각 인덱스 요소에 대입하고 출력한 후
 //	홀수 번째 인덱스 값의 합을 출력하세요. (0 번째 인덱스는 짝수로 취급)
 	public void practice2() {
-		int[]arr= {9,8,7,6,5,4,3,2,1};
+		int[]arr= new int[9];
 		
 		int sum=0;
-		for(int i=0;i<=8;i++) {
+		for(int i=0;i<arr.length;i++) {
+			arr[i]=arr.length-i;
 			System.out.print(arr[i]+" ");
 			
 			if(arr[i]%2==0) {
@@ -67,19 +69,18 @@ public class ArrayPractice {
 //	검색할 정수를 하나 입력 받아 배열에서 같은 수가 있는 인덱스를 찾아 출력.
 //	배열에 같은 수가 없을 경우 “일치하는 값이 존재하지 않습니다“ 출력
 	public void practice4() {
-		int num=sc.nextInt();
-		int[]arr=new int[num];
-		System.out.println("입력 0 : ");
-		System.out.println("입력 1 : "+num);
-		System.out.println("입력 2 : "+num);
-		System.out.println("입력 3 : "+num);
-		System.out.println("입력 4 : "+num);
-		
+	//-----몰랐던거-------------------------------
+		int[]arr=new int[5];
+		for(int i=0;i<arr.length;i++) {
+			System.out.printf("입력%d : ", i);
+			arr[i]=sc.nextInt();
+			
+		}
+	//------------------------------------------	
+		System.out.println("검색할 값 : ");
 		int search=sc.nextInt();
-		System.out.println("검색할 값 : "+search);
 		
 		boolean flag=true;
-		
 		
 		for(int i=0;i<arr.length; i++) {
 			if(arr[i]==search) {
@@ -109,15 +110,45 @@ public class ArrayPractice {
 //	문자열을 입력 받아 문자 하나 하나를 char배열에 대입하고
 //	검색할 문자가 문자열에 몇 개 들어가 있는지, 몇 번째 인덱스에 위치하는지 인덱스를 출력하세요.
 	public void practice5() {
+		
+		System.out.println("문자열 : ");
 		String str=sc.next();
-		System.out.println("문자열 : "+str);
-		char search=str.charAt(0);
-		System.out.println("문자 : "+search);
-		System.out.printf("%s에 %s가 존재하는 위치(인덱스)",str,search);
 		
+		//----------몰랐던거------------
 		
+		// 사용자가 입력한 문자열(str)을 문자 하나하나를 char배열에 넣기
+		char[]arr=new char[str.length()];
 		
+		//반복문을 통해 str.charAt(i)값을 arr[i]에 담는 과정
+		for(int i=0;i<arr.length;i++) {
+			arr[i]=str.charAt(i);
+		}
 		
+		System.out.print("문자 : ");
+		char ch=sc.nextLine().charAt(0);
+		
+		  // 3. 검색할 문자가 문자열에 몇개가 들어있는지와 어느 인덱스에 있는지 파악
+
+        int count = 0;    // 검색할 문자가 문자열에 몇개가 들어있는지를 세어줄 변수
+        // 문자열에서 동일한 문자가 발생할 때마다 1씩 증가
+
+        // 반복문 수행전 문자열 출력
+        System.out.print(str + "에 " + ch + "가 존재하는 위치(인덱스) : ");
+
+        // 인덱스마다 접근하기 위해 반복문 사용
+        for (int i = 0; i < arr.length; i++) {
+            if (arr[i] == ch) { // 해당 인덱스 값이 검색될 문자와 같을 경우
+                System.out.print(i + " ");    // 해당 인덱스 이어서 출력
+
+                count++;    // 그리고 count 1증가
+            }
+        }
+
+        // 위에서 print()를 사용했기 때문에 개행이 되어있지 않음
+        System.out.println();    // 줄바꿈
+
+        System.out.println(ch + "개수 : " + count);
+	//----------------------------------------------------------	
 	}
 	
 	
