@@ -34,6 +34,34 @@ public class ArrayPracticeRun {
 		
 //		ap.bingoGame();
 		
+		ArrayAnswer aa=new ArrayAnswer();
+//		aa.practice1();
+//		aa.practice2();
+//		aa.practice3();
+//		aa.practice4();
+//		aa.practice5();
+//		aa.practice6();
+//		aa.practice7();
+//		aa.practice8();
+//		aa.practice9();
+//		aa.practice10();
+//		aa.practice11();
+//		aa.practice12();
+//		aa.practice13();
+//		aa.practice14();
+//		aa.practice15();
+//		aa.practice16();
+//		aa.practice17();
+//		aa.practice18();
+//		aa.practice19();
+//		aa.practice20();
+//		aa.practice21();
+//		aa.practice22();
+//		aa.practice23();
+//		aa.practice24();
+	
+		
+		
 	}
 	
 }

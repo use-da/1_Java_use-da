@@ -27,9 +27,12 @@ import java.util.Scanner;
 //비겼습니다. 다시 시작합니다.
 //가위 바위 보 중 한 개를 입력하세요 : <-- 출력하며 반복됨
 
-public class test0817 {
+public class Test1 {
 
-	public static void main(String[]args) {
+	/**
+	 * 가위바위보 게임
+	 */
+	public void test081701() {
 		Scanner sc = new Scanner(System.in);
 		System.out.println("가위 바위 보 게임을 시작합니다.");
 		
@@ -70,17 +73,124 @@ public class test0817 {
 				}
 				break;
 			}
-			
-			
-			
-			
+		}
+	}
+	/**
+	 * 입력한 수의 소수판별
+	 */
+	public void test0818ex1() {
+		
+		//소수 판별
+		//1과 자기 자신(x) 외에는 나누어 떨어지지 않는 수
+		
+		//나눴을 때 0이 두개 나와야된다
+		//2,3,5,7,11,13.....
+		
+		//-> x%2~x-1 까지 나머지가 0인 경우가 있다면 소수 아님
+        //나머지가 0인 경우가 없다면 소수
+		
+		Scanner sc=new Scanner(System.in);
+		
+		System.out.println("숫자를 입력하세요");
+		int x=sc.nextInt();
+		
+		if(x==1) {
+			System.out.println(x+"는 소수가 아닙니다");
+			return;
 		}
 		
+		boolean flag=true;  //true==소수가 맞다
 		
-		
-		
+		for(int i=2; i<x; i++) {
+			
+			if(x%i==0) {
+				System.out.println(x+"는 소수가 아닙니다.");
+				flag=false;
+				break;
+			}
+		}
+		if(flag) {
+			System.out.println(x+"는 소수입니다");
+		}
 	}
 	
+		
+	/**
+	 * 입력한 수 n이하의 소수 모두 구하기
+	 */
+	public void test0818ex2() {
+		Scanner sc = new Scanner(System.in);
+		System.out.print("0이상의 숫자를 입력하세요 : ");
+
+		int n = sc.nextInt();
+
+		if (n >= 0) {
+			if (n == 0) {
+				System.out.println("소수가 없습니다");
+			} else {
+				for (int i = 1; i <= n; i++) {
+					int number = i;
+					if (n < 2) {
+						System.out.println("소수가 없습니다");
+						continue;
+					}
+					if (i < 2) {
+						continue;
+					}
+
+					boolean flag = true;
+					for (int x = 2; x < number; x++) {
+						if (number % x == 0) {
+							flag = false;
+							break;
+						}
+
+					}
+					if (flag) {
+						System.out.print(number + " ");
+					}
+				}
+			}
+		} else {
+			System.out.println("숫자를 잘못 입력했습니다");
+		}
+
+	}
+
+	/**
+	 * 0 ~ N 까지 수 중 소수를 구하는 반복문 
+	 */
+	public void test0818ex3() {
+		Scanner in = new Scanner(System.in);
+		int N = in.nextInt();
+		// 0 ~ N 까지 수 중 소수를 구하는 반복문        
+		for(int i = 0; i <= N; i++) {
+			make_prime(i);
+		}
+	}
+	// 소수 생성 메소드 
+	public static void make_prime(int number) {
+		// 0 과 1 은 소수가 아니므로 종료
+		if(number < 2) {
+			return;
+		}
+		// 2 는 소수다
+		if(number == 2) {
+			System.out.println(number);
+			return;
+		}
+		for(int i = 2; i < number; i++) {
+			// 소수가 아닐경우 종료
+			if(number % i == 0) {
+				return;
+			}
+		}
+		// 위 반복문에서 약수를 갖고 있지 않는경우 소수다.
+		System.out.println(number);
+		return;
+	}
+ 
+
 }
 
 
