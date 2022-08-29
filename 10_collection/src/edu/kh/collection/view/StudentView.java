@@ -58,34 +58,6 @@ public class StudentView {
 		}while(input !=0);
 	}
 	
-	
-
-	
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 	/**
