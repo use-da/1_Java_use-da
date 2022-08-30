@@ -71,9 +71,5 @@ public class ClientService {
 				e2.printStackTrace();
 			}
 		}
-		
-
-		
 	}
-
 }

@@ -41,7 +41,6 @@ public class ServerService {
 		BufferedReader br=null;
 		PrintWriter pw=null;
 		
-		
 		try {
 			//2. 서버용 소켓 객체 생성
 			serverSocket=new ServerSocket(port);
@@ -86,7 +85,6 @@ public class ServerService {
 			
 			System.out.println(clientIP+"가 보낸 메세지 : "+ clientMessage);
 			
-			
 		} catch (IOException e) {
 			e.printStackTrace();
 		}finally {
@@ -104,15 +102,6 @@ public class ServerService {
 			} catch (IOException e2) {
 				e2.printStackTrace();
 			}
-			
 		}
-		
-
-		
-		
-		
-		
-		
 	}
-
 }

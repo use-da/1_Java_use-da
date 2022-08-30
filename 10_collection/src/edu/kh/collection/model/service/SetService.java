@@ -102,12 +102,13 @@ public class SetService {
 		
 		
 		
-		for(Student s:set) {
+		for(Student s : set) {
 			System.out.println(s);
 			
 		}
 	}
-	
+
+
 	public void ex3() {
 		//2진 트리구조 노드하나당 두 갈래 정렬되고 중복 제거
 		//TreeSet : 오름차순으로 정렬되고 중복이 제거되는 Set
